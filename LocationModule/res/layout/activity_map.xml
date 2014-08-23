@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity" >
+
+    <fragment
+        android:id="@+id/map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        class="com.example.location_module.MySupportMapFragment" >
+    </fragment>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.7"
+        android:background="#FFFFFF"
+        android:text="" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/togglebutton"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="11dp"
+        android:alpha="0.7"
+        android:background="#FFFFFF"
+        android:textOff="Map"
+        android:textOn="Satellite"
+        android:textSize="11dp" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/togglebutton"
+        android:layout_marginBottom="11dp"
+        android:alpha="0.7"
+        android:background="#FFFFFF"
+        android:text="–"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnMinus"
+        android:layout_alignLeft="@+id/btnMinus"
+        android:layout_marginBottom="2dp"
+        android:alpha="0.7"
+        android:background="#FFFFFF"
+        android:text="+"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
