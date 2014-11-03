@@ -3,7 +3,7 @@ Location-module
 
 Android module with google map which is later used in one big project for collecting points and data on different locations. 
 
-REMARK:First you have to add google-play-services_lib.
+REMARK:First you have to add google-play-services_lib.<br>
   1) import Existing android code into workspace <br>
   2) you can find it in SDK - android-sdk 4.3\extras\google\google_play_services\libproject\google-play-services_lib <br>
   3) go to project Location module > Properties > Android > Library > Add > google-play-services_lib from your workspace <br>
